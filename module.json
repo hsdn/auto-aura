@@ -11,6 +11,6 @@
         "settingsFile": "config.json",
         "settingsMigrator": "settings_migrator.js"
     },
-    "servers": null,
-    "supportUrl": null
+    "servers": ["https://raw.githubusercontent.com/Cybours/auto-aura/master/"],
+  	"supportUrl": "https://github.com/Cybours/auto-aura/issues"
 }
