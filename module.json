@@ -1,0 +1,16 @@
+{
+    "disableAutoUpdate": false,
+    "name": "Auto auras",
+    "author": "Cybours",
+    "description": "Automatically enables auras on mystic",
+    "version": "1.0",
+    "options": {
+        "niceName": "Auto auras",
+        "guiName": "Auto auras",
+        "settingsVersion": 1,
+        "settingsFile": "config.json",
+        "settingsMigrator": "settings_migrator.js"
+    },
+    "servers": null,
+    "supportUrl": null
+}
