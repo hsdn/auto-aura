@@ -9,4 +9,4 @@ module.exports = [
         "name": "whether to activate the auras on rez",
         "type": "bool"
     }
-];
+]; 

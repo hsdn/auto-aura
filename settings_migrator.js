@@ -14,4 +14,4 @@ module.exports = function MigrateSettings(from_ver, to_ver, settings) {
         // Migrate from older version (using the new system) to latest one
         throw new Error('So far there is only one settings version and this should never be reached!');
     }
-}
+} 
