@@ -3,7 +3,8 @@ module.exports = function auto_auras(mod) {
 	const command = mod.command;
 	const AbnormalManager = require('../battle-notify/lib/abnormal');
 	const AbnManager = new AbnormalManager(mod,false);
-	let loc, wloc;
+	let loc, wloc,
+	isMystic = false;
 
 	command.add(['autoaura', '!autoaura'], {
     $none() {
@@ -19,11 +20,15 @@ module.exports = function auto_auras(mod) {
 		}
 	});
 
+	function isEnabled() {
+		return mod.settings.enabled && isMystic;
+	}
+
 	mod.game.on('enter_game', () => {
 		let model = mod.game.me.templateId;
 		let job = (model - 10101) % 100;
-		enabled = (job == 7);
-		if(mod.settings.enabled) {
+		isMystic = (job == 7);
+		if(isEnabled()) {
 			command.message('enabling auto-auras')
 		}
 
@@ -71,7 +76,7 @@ module.exports = function auto_auras(mod) {
 			if (mod.game.me.gameId == event.gameId) {
 				loc = event.loc;
 				wloc = event.w;
-				if(enabled) {
+				if(isEnabled()) {
 					mod.setTimeout(auras, 2000);
 				}
 			}
@@ -85,7 +90,7 @@ module.exports = function auto_auras(mod) {
 
 	//reactive after rez
 	mod.hook('S_CREATURE_LIFE', 3, (event)=>{
-		if(mod.settings.enabled && mod.settings.onrez)
+		if(isEnabled() && mod.settings.onrez)
 		{
 			if (event.gameId !== mod.game.me.gameId) return;
 
