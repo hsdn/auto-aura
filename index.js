@@ -1,14 +1,14 @@
 module.exports = function auto_auras(mod) {
 	const wait = ms => new Promise(resolve => mod.setTimeout(resolve, ms));
 	const command = mod.command;
-	const AbnormalManager = require('../battle-notify/lib/abnormal');
+	const AbnormalManager = require('lib/abnormal');
 	const AbnManager = new AbnormalManager(mod,false);
 	let loc, wloc,
 	isMystic = false;
 
 	command.add(['autoaura', '!autoaura'], {
-    $none() {
-      mod.settings.enabled = !mod.settings.enabled;
+	$none() {
+		mod.settings.enabled = !mod.settings.enabled;
 			command.message('auto-aura '+(mod.settings.enabled ? 'Enabled' : 'Disabled') + '.');
 		},
 		onrez() {
@@ -29,23 +29,27 @@ module.exports = function auto_auras(mod) {
 		let job = (model - 10101) % 100;
 		isMystic = (job == 7);
 		if(isEnabled()) {
-			command.message('enabling auto-auras')
+			command.message('Enabling auto-auras')
 		}
-
 	});
 
 	async function auras() {
-		//command.message('activating auras (if necessary)');
-		//crit aura
+		// Aura of the Merciless
 		if(hasNoAbn([700600,700601,700602,700603])) {
-			command.message('activating crit aura');
+			command.message('Activating Aura of the Merciless (crit)');
 			startSkill(130400);
 			await wait(1000);
 		}
-		//mana aura
+		// Aura of the Tenacious
 		if(hasNoAbn([700330,700300])) {
-			command.message('activating mana aura');
+			command.message('Activating Aura of the Tenacious (mana)');
 			startSkill(160100);
+			await wait(1000);
+		}
+		// Thrall Augmentation
+		if(hasNoAbn([702000,702005])) {
+			command.message('Activating Thrall Augmentation');
+			startSkill(450100);
 			await wait(1000);
 		}
 	}
@@ -108,6 +112,5 @@ module.exports = function auto_auras(mod) {
 				}
 			}
 		}
-});
-
-  }
+	});
+}

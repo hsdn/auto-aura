@@ -1,10 +1,10 @@
 {
   "files": {
-    "Readme.md": "bb0074bda4627f940aa51df5870098056bc89b36af4f827b1d0b10d7bce396f1",
-    "index.js": "ba4ca900e1ba73b61d5db21d4101f955d17bf2db0ec8ac39b6e4006287351953",
-    "module.json": "464d8f1aee779c53c17903855796658cee231dc04343d787656fed3b988518f9",
-    "settings_migrator.js": "52f270b55306658e0c6158095c13e2422e6a21226d029abcb68548e1a2a53f2f",
-    "settings_structure.js": "9a3b4ff0e424e9755a45e2b127ead42d456e3eb3761eb59c4551d620daeac919"
+    "README.md": "dc7de3023be1e3f24c66b5e21a656de550c5b06c8a000b2b50100c3b4bfd93fc",
+    "lib/abnormal.js": "023e56bffbf372d8effc78eadea575bff08e3e9751235c16070cb7ee1efeb20c",
+    "index.js": "f5c9916dfba6ba15bb62b3db54aea1e1b3ef3ff83ed6c8b64115617882394847",
+    "module.json": "958426a0a4fc7b1ba0c20351713b6a9387913da69358c32586ffe31720089e87",
+    "settings_migrator.js": "52f270b55306658e0c6158095c13e2422e6a21226d029abcb68548e1a2a53f2f"
   },
   "defs": {
     "C_START_SKILL": 7,

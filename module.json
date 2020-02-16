@@ -1,7 +1,7 @@
 {
     "disableAutoUpdate": false,
     "name": "Auto auras",
-    "author": "Cybours",
+    "author": "HSDN / Cybours",
     "description": "Automatically enables auras on mystic",
     "version": "1.0",
     "options": {
@@ -11,6 +11,6 @@
         "settingsFile": "config.json",
         "settingsMigrator": "settings_migrator.js"
     },
-    "servers": ["https://raw.githubusercontent.com/Cybours/auto-aura/master/"],
-  	"supportUrl": "https://github.com/Cybours/auto-aura/issues"
+    "servers": ["https://raw.githubusercontent.com/hsdn/auto-aura/master/"],
+  	"supportUrl": "https://github.com/hsdn/auto-aura/issues"
 }
