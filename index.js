@@ -1,7 +1,7 @@
 module.exports = function auto_auras(mod) {
 	const wait = ms => new Promise(resolve => mod.setTimeout(resolve, ms));
 	const command = mod.command;
-	const AbnormalManager = require('lib/abnormal');
+	const AbnormalManager = require('./lib/abnormal');
 	const AbnManager = new AbnormalManager(mod,false);
 	let loc, wloc,
 	isMystic = false;
