@@ -1,15 +1,20 @@
 {
-  "files": {
-    "README.md": "dc7de3023be1e3f24c66b5e21a656de550c5b06c8a000b2b50100c3b4bfd93fc",
-    "lib/abnormal.js": "023e56bffbf372d8effc78eadea575bff08e3e9751235c16070cb7ee1efeb20c",
-    "index.js": "2bb369ff00456985b3799792177bc6bdf53b0860b36fe81e346b1ef2a19429f2",
-    "module.json": "958426a0a4fc7b1ba0c20351713b6a9387913da69358c32586ffe31720089e87",
-    "settings_migrator.js": "52f270b55306658e0c6158095c13e2422e6a21226d029abcb68548e1a2a53f2f"
-  },
-  "defs": {
-    "C_START_SKILL": 7,
-    "S_SPAWN_ME": 3,
-    "C_PLAYER_LOCATION": 5,
-    "S_CREATURE_LIFE": 3
-  }
+    "files": {
+        "README.md": "cf93998d4d8c5918cba642133e0ff2ca2db916d976a937c81187ca70ef4c213b",
+        "index.js": "dc76fbd5b31befdfa1f29e06f3ec1f1a8da3775826f14c9d8f648df100b14005",
+        "lib/abnormal.js": "023e56bffbf372d8effc78eadea575bff08e3e9751235c16070cb7ee1efeb20c",
+        "module.json": "eeff522f5b535e2ca31aed3c6af6c826676ed90f17b4814e06ed4ad1b1b2561b",
+        "settings_migrator.js": "52f270b55306658e0c6158095c13e2422e6a21226d029abcb68548e1a2a53f2f"
+    },
+    "defs": {
+        "C_PLAYER_LOCATION": 5,
+        "C_START_SKILL": 7,
+        "S_ABNORMALITY_BEGIN": 3,
+        "S_ABNORMALITY_END": 1,
+        "S_ABNORMALITY_REFRESH": 1,
+        "S_CREATURE_LIFE": 3,
+        "S_LOAD_TOPO": "event",
+        "S_NPC_STATUS": 2,
+        "S_SPAWN_ME": 3
+    }
 }
