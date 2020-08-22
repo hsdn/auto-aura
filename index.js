@@ -4,7 +4,8 @@ module.exports = function auto_auras(mod) {
 	const AbnormalManager = require('./lib/abnormal');
 	const AbnManager = new AbnormalManager(mod,false);
 	let loc, wloc,
-	isMystic = false;
+	isMystic = false,
+	isDead = false;
 
 	command.add(['autoaura', '!autoaura'], {
 	$none() {
