@@ -1,10 +1,10 @@
 {
     "files": {
-        "Readme.md": "cf93998d4d8c5918cba642133e0ff2ca2db916d976a937c81187ca70ef4c213b",
-        "index.js": "972ccc48a158b7bf23d1962c45a8a6054537f4b623d9d66644671fee5e4823c7",
+        "Readme.md": "7a7fbda6fb36a75bd6ebfe2e07cf043cacd5605a47024d0118b351c15e2851fe",
+        "index.js": "f7ec624635ee0929a50ea83db8b48915a5192ae5abc2a7d41dc3430fb9fe95d6",
         "lib/abnormal.js": "023e56bffbf372d8effc78eadea575bff08e3e9751235c16070cb7ee1efeb20c",
         "module.json": "eeff522f5b535e2ca31aed3c6af6c826676ed90f17b4814e06ed4ad1b1b2561b",
-        "settings_migrator.js": "52f270b55306658e0c6158095c13e2422e6a21226d029abcb68548e1a2a53f2f"
+        "settings_migrator.js": "6721d3d4c0bd3fdb0eae09cc08072edd07463e7791d49e48f2ff23b16d056aee"
     },
     "defs": {
         "C_PLAYER_LOCATION": 5,
