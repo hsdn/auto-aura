@@ -87,7 +87,7 @@ module.exports = function auto_auras(mod) {
 	}
 
 	mod.hook("S_SPAWN_ME", 3, (event) => {
-		if (mod.game.me.gameId == event.gameId) {
+		if (mod.game.me.gameId == event.gameId && !mod.game.me.inOpenWorld) {
 			loc = event.loc;
 			wloc = event.w;
 			if (isEnabled()) {
@@ -106,7 +106,7 @@ module.exports = function auto_auras(mod) {
 
 	mod.hook("S_CREATURE_LIFE", 3, (event) => {
 		if (isEnabled() && mod.settings.onrez) {
-			if (event.gameId !== mod.game.me.gameId) return;
+			if (event.gameId !== mod.game.me.gameId || mod.game.me.inOpenWorld) return;
 			loc = event.loc;
 			mod.clearInterval(timer);
 			if (!event.alive) {
