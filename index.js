@@ -94,7 +94,7 @@ module.exports = function auto_auras(mod) {
 				mod.clearInterval(timer);
 				mod.setTimeout(() => {
 					timer = mod.setInterval(auras, 500);
-				}, 1000);
+				}, 3000);
 			}
 		}
 	});
@@ -116,7 +116,7 @@ module.exports = function auto_auras(mod) {
 				mod.setTimeout(() => {
 					startSkill(450100); // Thrall Augmentation enabling fix
 					timer = mod.setInterval(auras, 500);
-				}, 2000);
+				}, 3000);
 			}
 		}
 	});
