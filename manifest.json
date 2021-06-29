@@ -2,14 +2,14 @@
     "files": {
         "Readme.md": "7a7fbda6fb36a75bd6ebfe2e07cf043cacd5605a47024d0118b351c15e2851fe",
         "index.js": "f1e2d408b689dc4d223ad0d7dd5bcd5944110b13ad24ea006447408b52cc45f3",
-        "lib/abnormal.js": "023e56bffbf372d8effc78eadea575bff08e3e9751235c16070cb7ee1efeb20c",
+        "lib/abnormal.js": "31c05ab6ea9a3ef6684416132afa24186de4b78e95c1e596e1a56a3782a7935c",
         "module.json": "eeff522f5b535e2ca31aed3c6af6c826676ed90f17b4814e06ed4ad1b1b2561b",
         "settings_migrator.js": "6721d3d4c0bd3fdb0eae09cc08072edd07463e7791d49e48f2ff23b16d056aee"
     },
     "defs": {
         "C_PLAYER_LOCATION": 5,
         "C_START_SKILL": 7,
-        "S_ABNORMALITY_BEGIN": 3,
+        "S_ABNORMALITY_BEGIN": [3,4],
         "S_ABNORMALITY_END": 1,
         "S_ABNORMALITY_REFRESH": 1,
         "S_CREATURE_LIFE": 3,
